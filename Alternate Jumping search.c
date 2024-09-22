@@ -1,8 +1,18 @@
-//Alternate searching
+//Alternate Jumping search
 #include<stdio.h>
 int main(){
-	int a[10] = {1,12,23,34,45,56,67,78,89,90};
-	int tofind = 45;
+	int size;
+	printf("Enter how many elements you want to enter?\n");
+	scanf("%d",&size);
+	int a[size];
+	int i=0;
+	printf("Enter elements:\n");
+	for(i=0;i<size;i++){
+		scanf("%d",&a[i]);
+	}
+	int tofind;
+	printf("Enter which number you want to choose?\n");
+	scanf("%d",&tofind);
 	int first = 0, next = 1;
 	while(1){
 		if(a[first]==tofind){
